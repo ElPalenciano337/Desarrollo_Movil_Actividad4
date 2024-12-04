@@ -1,0 +1,21 @@
+<div class="container">
+    <h2>Países</h2>
+    <hr>
+    
+    <div>
+        <mat-form-field appearance="outline">
+            <mat-label>Filtrar Países</mat-label>
+            <input matInput [(ngModel)]="searchText" placeholder="Type to filter countries">
+        </mat-form-field>
+    </div>
+</div>
+
+
+<mat-card appearance="outlined" *ngFor="let countrie of countries | filterCountries: searchText">
+    <mat-card-header>
+        <mat-card-title-group>
+            <mat-card-title>{{ countrie.name.common }}</mat-card-title>
+            <img mat-card-sm-image [src]="countrie.flags.png" alt="Flag of {{ countrie.name.common }}" />
+        </mat-card-title-group>
+    </mat-card-header>
+</mat-card>

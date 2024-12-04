@@ -1,0 +1,33 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e0f7fa;
+    color: #004d40;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    color: #00bcd4;
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+p span {
+    color: #ff9800;
+    font-weight: bold;
+}
+
+.example-button-row {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+button {
+    margin: 0 auto;
+}
